@@ -3,10 +3,13 @@ package com.copasso.cocobill.ui.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.copasso.cocobill.R;
@@ -21,10 +24,6 @@ import com.copasso.cocobill.utils.ToastUtils;
 
 import java.util.Collections;
 import java.util.List;
-
-import androidx.recyclerview.widget.ItemTouchHelper;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by Zhouas666 on 2019-01-11
@@ -122,6 +121,7 @@ public class BillSortActivity extends BaseMVPActivity<BillNoteContract.Presenter
             public boolean isLongPressDragEnabled() {
                 //是否可拖拽
                 return true;
+                //
             }
         });
 
