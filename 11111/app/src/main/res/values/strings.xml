@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+
+    <!-- main activity -->
+    <string name="first_title">Detail</string>
+    <string name="second_title">记一笔</string>
+    <string name="third_title">报表</string>
+    <string name="four_title">账户</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--login activity-->
+    <string name="login_user_name">Tell me your register name or email.</string>
+    <string name="login_password">Tell me your password (be quiet!).</string>
+    <string name="register_user_name">Show me a cool user name!</string>
+    <string name="register_user_email">You can regain your password by email.</string>
+    <string name="register_password">I can keep secret!</string>
+
+    <!--about activity-->
+    <string name="about">About team9 expense tracker</string>
+    <string name="about_introduce">Info\n\n
+        ------ Team 9 project.......------\n\n
+
+    </string>
+    <string name="about_introduce2">ps:....</string>
+    <string name="app_name_with_introduce">expense tracker - good helper</string>
+    <string name="developers"> Team9 members
+    </string>
+
+    <!--other-->
+    <string name="rmb">¥</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="get_code">获取验证码</string>
+    <string name="reset_get">重新获取</string>
+    <string name="verify_phone">验证手机号</string>
+    <string name="verify">验证</string>
+    <string name="finish">完成</string>
+    <string name="income">income</string>
+    <string name="cost">expense</string>
+    <string name="save">保存</string>
+    <string name="money_normal">0.00</string>
+    <string name="say_something">说点什么吧&#8230;</string>
+    <string name="cur_month_cost">Expense</string>
+    <string name="cur_month_income">Income</string>
+    <string name="icon">头像</string>
+    <string name="username">用户名</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="phone">电话</string>
+    <string name="email">邮箱</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="not_set">未设置</string>
+    <string name="year">岁</string>
+    <string name="setting">Setting</string>
+    <!--Loading-->
+    <string name="load_msg">正在加载中&#8230;</string>
+    <string name="load_update">正在修改中&#8230;</string>
+    <string name="load_delete">正在删除中&#8230;</string>
+    <string name="load_send_code">正在发送验证码&#8230;</string>
+    <string name="load_verify">正在验证中&#8230;</string>
+    <string name="load_switch">正在切换中&#8230;</string>
+    <string name="load_login">正在登录中&#8230;</string>
+    <string name="load_sign">正在注册中&#8230;</string>
+
+</resources>
+

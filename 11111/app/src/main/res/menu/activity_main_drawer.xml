@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_bill">
+            <item
+                android:id="@+id/nav_static"
+                android:icon="@mipmap/ic_drawer_assignment_grey600_36dp"
+                android:title="Statistics" />
+            <item
+                android:id="@+id/nav_total"
+                android:icon="@mipmap/ic_drawer_guide"
+                android:title="Detail" />
+            <item
+                android:id="@+id/nav_sync"
+                android:icon="@mipmap/ic_drawer_share"
+                android:title="Sync" />
+    </group>
+
+    <group android:id="@+id/group_setting">
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@mipmap/ic_drawer_settings"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@mipmap/ic_color_lens_black_24dp"
+                android:title="Theme" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_drawer_about"
+                android:title="About" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/ic_drawer_exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>
