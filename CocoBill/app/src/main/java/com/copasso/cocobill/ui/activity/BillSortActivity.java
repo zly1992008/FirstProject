@@ -103,10 +103,10 @@ public class BillSortActivity extends BaseMVPActivity<BillNoteContract.Presenter
                 int index = viewHolder.getAdapterPosition()-1;
                 //侧滑事件
                 new MaterialDialog.Builder(mContext)
-                        .title("确定删除此分类")
-                        .content("删除后该分类下的账单会继续保留")
-                        .positiveText("确定")
-                        .negativeText("取消")
+                        .title("delete this category")
+                        .content("Bills in this category will be retained after deletion")
+                        .positiveText("confirm")
+                        .negativeText("cancel")
                         .onPositive(((dialog, which) -> {
                             mDatas.remove(index);
                             billSortAdapter.notifyItemRemoved(index);
