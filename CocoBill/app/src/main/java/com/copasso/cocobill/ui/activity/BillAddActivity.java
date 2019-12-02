@@ -314,18 +314,18 @@ public class BillAddActivity extends BaseMVPActivity<BillContract.Presenter>
     public void showContentDialog() {
 
         new MaterialDialog.Builder(this)
-                .title("备注")
+                .title("comment")
                 .inputType(InputType.TYPE_CLASS_TEXT)
                 .inputRangeRes(0, 200, R.color.textRed)
-                .input("写点什么", remarkInput, (dialog, input) -> {
+                .input("Write something", remarkInput, (dialog, input) -> {
                     if (input.equals("")) {
-                        Toast.makeText(getApplicationContext(), "内容不能为空！" + input,
+                        Toast.makeText(getApplicationContext(), "content must not be null！" + input,
                                 Toast.LENGTH_SHORT).show();
                     } else {
                         remarkInput = input.toString();
                     }
                 })
-                .positiveText("确定")
+                .positiveText("confirm")
                 .show();
     }
 
