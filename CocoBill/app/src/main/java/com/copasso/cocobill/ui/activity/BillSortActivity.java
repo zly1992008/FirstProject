@@ -196,10 +196,10 @@ public class BillSortActivity extends BaseMVPActivity<BillNoteContract.Presenter
     public void showContentDialog() {
 
         new MaterialDialog.Builder(this)
-                .title("添加分类")
+                .title("add category")
                 .inputType(InputType.TYPE_CLASS_TEXT)
                 .inputRangeRes(0, 200, R.color.textRed)
-                .input("分类名称", null, (dialog, input) -> {
+                .input("name", null, (dialog, input) -> {
                     if (input.equals("")) {
                         ToastUtils.show(mContext,"内容不能为空！");
                     } else {
@@ -208,7 +208,7 @@ public class BillSortActivity extends BaseMVPActivity<BillNoteContract.Presenter
                         mDatas.add(sort);
                     }
                 })
-                .positiveText("确定")
+                .positiveText("confirm")
                 .show();
     }
 

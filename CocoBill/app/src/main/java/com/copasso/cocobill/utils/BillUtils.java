@@ -56,7 +56,7 @@ public class BillUtils {
                 tmpList.addAll(beanList);
                 MonthListBean.DaylistBean tmpDay = new MonthListBean.DaylistBean();
                 tmpDay.setList(tmpList);
-                tmpDay.setMoney("支出：" + outcome + " 收入：" + income);
+                tmpDay.setMoney("expense：" + outcome + " income：" + income);
                 tmpDay.setTime(preDay);
                 daylist.add(tmpDay);
 
@@ -81,7 +81,7 @@ public class BillUtils {
             tmpList.addAll(beanList);
             MonthListBean.DaylistBean tmpDay = new MonthListBean.DaylistBean();
             tmpDay.setList(tmpList);
-            tmpDay.setMoney("支出：" + outcome + " 收入：" + income);
+            tmpDay.setMoney("expense：" + outcome + " income：" + income);
             tmpDay.setTime(DateUtils.getDay(beanList.get(0).getCrdate()));
             daylist.add(tmpDay);
         }

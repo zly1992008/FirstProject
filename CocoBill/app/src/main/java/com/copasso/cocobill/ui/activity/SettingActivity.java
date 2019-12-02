@@ -74,7 +74,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         exportCL = findViewById(R.id.cil_export);
 
         //初始化Toolbar
-        toolbar.setTitle("设置");
+        toolbar.setTitle("setting");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(v -> finish());
