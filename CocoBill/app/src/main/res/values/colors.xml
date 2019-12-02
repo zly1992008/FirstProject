@@ -4,9 +4,9 @@
     <!--<color name="colorPrimaryDark">#00574B</color>-->
     <!--<color name="colorAccent">#D81B60</color>-->
     <!--原谅绿-->
-    <color name="colorPrimary">#00BA91</color>
-    <color name="colorPrimaryDark">#00BA91</color>
-    <color name="colorAccent">#00BA91</color>
+    <color name="colorPrimary">#234581</color>
+    <color name="colorPrimaryDark">#234581</color>
+    <color name="colorAccent">#234581</color>
 
     <!--酷炫黑-->
     <color name="colorPrimaryDarkBlack">#010001</color>

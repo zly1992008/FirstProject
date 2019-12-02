@@ -12,7 +12,7 @@ import com.copasso.cocobill.common.Constants;
  */
 public class ThemeManager {
 
-    private String[] mThemes = {"Green", "Black", "Red", "Blue", "Purple", "Orange", "Brown"};
+    private String[] mThemes = {"FIU", "Black", "Red", "Blue", "Purple", "Orange", "Brown"};
 
     private static ThemeManager instance;
 
