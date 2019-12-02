@@ -108,9 +108,9 @@ public class MonthListAdapter extends StickyHeaderGridAdapter {
             final int section1 = getAdapterPositionSection(holder.getAdapterPosition());
             final int offset1 = getItemSectionOffset(section1, holder.getAdapterPosition());
 
-            new AlertDialog.Builder(mContext).setTitle("是否删除此条记录")
-                    .setNegativeButton("取消", null)
-                    .setPositiveButton("确定", (dialog, which) -> {
+            new AlertDialog.Builder(mContext).setTitle("delete this record")
+                    .setNegativeButton("cancel", null)
+                    .setPositiveButton("confirm", (dialog, which) -> {
                         onStickyHeaderClickListener
                                 .OnDeleteClick(mDatas.get(section1).getList().get(offset1), section1, offset1);
                     })
