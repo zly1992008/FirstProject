@@ -1,6 +1,8 @@
 package com.copasso.cocobill.ui.activity;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +36,12 @@ public class LandActivity extends BaseMVPActivity<LandContract.Presenter>
     private TextView forgetTV;
     private Button loginBtn;
 
+    public Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            mPresenter.login("Team9", "1234");
+        }
+    };
     //是否是登陆操作
     private boolean isLogin = true;
 
@@ -117,10 +125,8 @@ public class LandActivity extends BaseMVPActivity<LandContract.Presenter>
             SnackbarUtils.show(mContext, "用户名或密码不能为空");
             return;
         }*/
-
-        ProgressUtils.show(this, "logging, please wait...");
-
-        mPresenter.login(username, password);
+        ProgressUtils.show(LandActivity.this, "logging, please wait...");
+        mHandler.sendEmptyMessageDelayed(0, 1500);
     }
 
     /**

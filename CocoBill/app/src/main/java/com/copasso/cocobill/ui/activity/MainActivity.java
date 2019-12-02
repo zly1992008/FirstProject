@@ -2,6 +2,8 @@ package com.copasso.cocobill.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,9 +35,10 @@ import com.copasso.cocobill.ui.fragment.MonthChartFragment;
 import com.copasso.cocobill.ui.fragment.MonthListFragment;
 import com.copasso.cocobill.utils.DateUtils;
 import com.copasso.cocobill.utils.GlideCacheUtil;
+import com.copasso.cocobill.utils.ProgressUtils;
 import com.copasso.cocobill.utils.SharedPUtils;
-import com.copasso.cocobill.utils.SnackbarUtils;
 import com.copasso.cocobill.utils.ThemeManager;
+import com.copasso.cocobill.utils.ToastUtils;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
@@ -56,6 +59,13 @@ import cn.bmob.v3.BmobUser;
  */
 public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
     public static boolean IS_LOGIN = false;
+    public Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            ProgressUtils.dismiss();
+            ToastUtils.show(MainActivity.this, "Complete");
+        }
+    };
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -205,7 +215,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_sync:    //同步账单
-                SnackbarUtils.show(mContext, "Sync success");
+                ProgressUtils.show(MainActivity.this, "Syncronizing data, please wait..");
+                mHandler.sendEmptyMessageDelayed(0,2000);
                 /*if (currentUser == null)
                     SnackbarUtils.show(mContext, "请先登陆");
                 else
