@@ -329,7 +329,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         } else {
             drawerTvAccount.setText("Team9");
             drawerTvMail.setText("Welcome.");
-            drawerIv.setImageResource(R.mipmap.ic_def_icon);
+            drawerIv.setImageResource(R.mipmap.panther);
         }
     }
 }
