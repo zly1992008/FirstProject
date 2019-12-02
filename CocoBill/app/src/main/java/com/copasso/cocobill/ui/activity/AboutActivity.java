@@ -22,8 +22,8 @@ import me.drakeet.support.about.Category;
 public class AboutActivity extends AbsAboutActivity {
     @Override
     protected void onCreateHeader(@NonNull ImageView icon, @NonNull TextView slogan, @NonNull TextView version) {
-        icon.setImageResource(R.mipmap.ic_launcher);
-        slogan.setText("ExpenseTracker");
+        icon.setImageResource(R.mipmap.download);
+        slogan.setText("ExpenseTracker:Team9");
         version.setText("v " + BuildConfig.VERSION_NAME);
     }
 

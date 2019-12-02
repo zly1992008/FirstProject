@@ -117,7 +117,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         tTotal = findViewById(R.id.t_total);
 
         //初始化Toolbar
-        toolbar.setTitle("ExpenseTracker");
+        toolbar.setTitle("ExpenseTracker(Team9)");
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
